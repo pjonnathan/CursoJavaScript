@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA</title>
+</head>
+<body>
+    <h1>CONSULTAR A MEDIA</h1>
+    Primeira Nota: <input type="text" name="nota1" id="nota1"><br>
+    Segunda Nota: <input type="text" name="nota2" id="nota2"><br>
+    Terceira Nota: <input type="text" name="nota3" id="nota3"><br>
+    Quarta Nota: <input type="text" name="nota4" id="nota4"> <br>
+    <input type="button" value="MEDIA" onclick="calcular()"><br>
+    <div id="res">Resultado</div>
+    <script>
+        function calcular(){
+            var not1 = window.document.getElementById('nota1')
+            var not2 = window.document.getElementById('nota2')
+            var not3 = window.document.getElementById('nota3')
+            var not4 = window.document.getElementById('nota4')
+            var res = window.document.getElementById('res')
+            var n1 = Number(not1.value)
+            var n2 = Number(not2.value)
+            var n3 = Number(not3.value)
+            var n4 = Number(not4.value)
+            var media = (n1+n2+n3+n4)/4
+            if(media>=7.0){
+                res.innerText = `A sua media é ${media}! APROVADO!`
+            }else{
+                res.innerText = `A sua media é ${media}! REPROVADO!`
+            }
+        }
+    </script>
+</body>
+</html>

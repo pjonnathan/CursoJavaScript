@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body>
+    <h1>Soma</h1>
+    <div>
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="ress">Resultado</div>
+    </div>
+    <h1>Multiplicação</h1>
+    <div>
+        <input type="number" name="txtn3" id="txtn3">
+        <input type="number" name="txtn4" id="txtn4">
+        <input type="button" value="Multiplicar" onclick="mult()">
+        <div id="resm">Resultado</div>
+    </div>
+    <h1>Divisão</h1>
+    <div>
+        <input type="number" name="txtn5" id="txtn5">
+        <input type="number" name="txtn6" id="txtn6">
+        <input type="button" value="Dividir" onclick="dividir()">
+        <div id="resd">Resultado</div>
+    </div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1+n2
+            ress.innerText = (`A soma de ${n1} + ${n2} é igual a ${s}`)
+        }
+        function mult() {
+            var tn3 = window.document.getElementById('txtn3')
+            var tn4 = window.document.getElementById('txtn4')
+            var n3 = Number(tn3.value)
+            var n4 = Number(tn4.value)
+            var m = n3*n4
+            resm.innerText = (`A multiplicação de ${n3} * ${n4} é igual a ${m}`)
+        }
+        function dividir() {
+            var tn5 = window.document.getElementById('txtn5')
+            var tn6 = window.document.getElementById('txtn6')
+            var n5 = Number(tn5.value)
+            var n6 = Number(tn6.value)
+            var d = n5/n6
+            resd.innerText = (`A divisão de ${n5} / ${n6} é igual a ${d}`)
+        }
+    </script>
+</body>
+</html>

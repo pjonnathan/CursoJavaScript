@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicianod com DOM</title>
+    <style>
+        p{
+            color: yellow;
+            background-color: red;
+        }
+        body{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <div class="n1">
+        <label for="n1">Primeira Nota: </label>
+        <input type="text" id="n1">
+    </div>
+    <div id="n2">
+        <label for="n2">Segunda Nota: </label>
+        <input type="text" id="n2">
+    </div>
+    <p>Clique em mim<p>
+    <div>
+        <button type="submit">Somar</button>
+    </div>
+    <script>
+         var p1 = window.document.querySelector('div#n2')
+         p1.style.background = 'black'
+         var dvis = window.document.getElementsByTagName('div')[1]
+         dvis.innerText = 'Jonnathan'
+         var div1 = window.document.getElementById('n2')
+         div1.style.background = 'red'
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição if</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    Nacionalidade: <input type="text" name="txtn" id="txtn">
+    <input type="button" value="Verificar" onclick="buscar()">
+    <div id="res"></div>
+    <script>
+        function buscar() {
+            var txtl = window.document.getElementById('txtn')
+            var res = window.document.getElementById('res')
+            var local = txtl.value
+            res.innerText = `A sua nacionalidade é ${local}`
+            if(local == 'Brasil'){
+                res.innerText = 'Você é brasileiro'
+            }else{
+                res.innerText = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
