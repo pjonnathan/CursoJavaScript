@@ -34,7 +34,7 @@ function calcular() {
                 img.setAttribute('src','imagem/jovemm.jpg')
             }else if (ano >= 18 && ano <= 50){
                 genero = 'adulto'
-                img.setAttribute('src','imagem/adultom.jpg')
+                img.setAttribute('src','imagem/adultam.jpg')
             }else {
                 genero = 'velha'
                 img.setAttribute('src','imagem/velham.jpg')
