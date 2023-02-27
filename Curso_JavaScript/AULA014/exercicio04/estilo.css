@@ -1,16 +1,19 @@
 body {
-    background: rgb(58, 58, 153);
+    background: rgb(120, 243, 120);
 }
 header {
     text-align: center;
+}
+div {
+    padding: 5px;
 }
 section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
+    box-shadow: 5px 5px 10px blue;
 }
 footer {
     text-align: center;
